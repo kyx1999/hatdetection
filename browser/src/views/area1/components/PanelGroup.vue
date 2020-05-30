@@ -38,45 +38,6 @@
         </div>
       </div>
     </el-col>
-    <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
-      <!--<div class="card-panel" @click="handleSetLineChartData('purchases')">-->
-      <div class="card-panel" @click="dialogTableVisible = true">
-        <!--<div class="card-panel-icon-wrapper icon-money">-->
-        <div class="card-panel-icon-wrapper icon-message-unread">
-          <!--<svg-icon icon-class="money" class-name="card-panel-icon" />-->
-          <svg-icon icon-class="message" class-name="card-panel-icon" />
-        </div>
-        <div class="card-panel-description">
-          <!--<div class="card-panel-text">-->
-          <!--Purchases-->
-          <!--</div>-->
-          <div class="card-panel-text">
-            未读消息
-          </div>
-          <!--<count-to :start-val="0" :end-val="9280" :duration="3200" class="card-panel-num" />-->
-          <count-to :start-val="0" :end-val="3" :duration="3200" class="card-panel-num" />
-        </div>
-      </div>
-    </el-col>
-    <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
-      <div class="card-panel" @click="handleSetLineChartData('shoppings')">
-        <!--<div class="card-panel-icon-wrapper icon-shopping">-->
-        <div class="card-panel-icon-wrapper icon-message-emergency">
-          <!--<svg-icon icon-class="shopping" class-name="card-panel-icon" />-->
-          <svg-icon icon-class="message" class-name="card-panel-icon" />
-        </div>
-        <div class="card-panel-description">
-          <!--<div class="card-panel-text">-->
-          <!--Shoppings-->
-          <!--</div>-->
-          <div class="card-panel-text">
-            紧急消息
-          </div>
-          <!--<count-to :start-val="0" :end-val="13600" :duration="3600" class="card-panel-num" />-->
-          <count-to :start-val="0" :end-val="0" :duration="3600" class="card-panel-num" />
-        </div>
-      </div>
-    </el-col>
     <el-dialog v-el-drag-dialog :visible.sync="dialogTableVisible" title="未读消息" @dragDialog="handleDrag">
       <el-table :data="gridData">
         <el-table-column property="date" label="日期" />

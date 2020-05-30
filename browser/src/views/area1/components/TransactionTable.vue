@@ -1,7 +1,7 @@
 <template>
   <el-table :data="list" style="width: 100%;padding-top: 15px;">
     <!--<el-table-column label="Order_No" min-width="200">-->
-    <el-table-column label="厂区" min-width="200">
+    <el-table-column label="区域" min-width="200">
       <template slot-scope="scope">
         {{ scope.row.order_no | orderNoFilter }}
       </template>
@@ -51,15 +51,23 @@ export default {
       transactionList().then(response => {
         // this.list = response.data.items.slice(0, 8)
         this.list = [{
-          'order_no': '厂区1',
+          'order_no': '区域1',
           'status': '正常'
         },
         {
-          'order_no': '厂区2',
+          'order_no': '区域2',
           'status': '无信号'
         },
         {
-          'order_no': '厂区3',
+          'order_no': '区域3',
+          'status': '无信号'
+        },
+        {
+          'order_no': '区域4',
+          'status': '无信号'
+        },
+        {
+          'order_no': '区域5',
           'status': '无信号'
         }]
       })
