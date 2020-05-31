@@ -44,7 +44,7 @@
         <el-table-column property="content" label="内容" />
       </el-table>
       <br>
-      <el-button type="primary">
+      <el-button type="primary" style="position: relative; left: 50%; margin-left: -50px;">
         全部标为已读
       </el-button>
     </el-dialog>

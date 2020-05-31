@@ -19,6 +19,13 @@ import './utils/error-log' // error log
 
 import * as filters from './filters' // global filters
 
+import VideoPlayer from 'vue-video-player'
+import 'video.js/dist/video-js.css' // videoJs的样式
+import 'vue-video-player/src/custom-theme.css' // vue-video-player的样式
+import 'videojs-flash' // 引入才能播放rtmp视屏
+// import 'videojs-contrib-hls' // 引入才能播放m3u8文件
+Vue.use(VideoPlayer)
+
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api

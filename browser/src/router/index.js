@@ -8,8 +8,8 @@ import Layout from '@/layout'
 
 /* Router Modules */
 // import componentsRouter from './modules/components'
-import chartsRouter from './modules/charts'
-import tableRouter from './modules/table'
+// import chartsRouter from './modules/charts'
+// import tableRouter from './modules/table'
 // import nestedRouter from './modules/nested'
 
 /**
@@ -172,24 +172,24 @@ export const asyncRoutes = [
   //   ]
   // },
 
-  {
-    path: '/icon',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/icons/index'),
-        name: 'Icons',
-        meta: { title: 'Icons', icon: 'icon', noCache: true }
-      }
-    ]
-  },
+  // {
+  //   path: '/icon',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       component: () => import('@/views/icons/index'),
+  //       name: 'Icons',
+  //       meta: { title: 'Icons', icon: 'icon', noCache: true }
+  //     }
+  //   ]
+  // },
 
   /** when your routing map is too long, you can split it into small modules **/
   // componentsRouter,
-  chartsRouter,
+  // chartsRouter,
   // nestedRouter,
-  tableRouter,
+  // tableRouter,
 
   // {
   //   path: '/example',
@@ -223,18 +223,18 @@ export const asyncRoutes = [
   //   ]
   // },
 
-  {
-    path: '/tab',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/tab/index'),
-        name: 'Tab',
-        meta: { title: 'Tab', icon: 'tab' }
-      }
-    ]
-  },
+  // {
+  //   path: '/tab',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       component: () => import('@/views/tab/index'),
+  //       name: 'Tab',
+  //       meta: { title: 'Tab', icon: 'tab' }
+  //     }
+  //   ]
+  // },
 
   // {
   //   path: '/error',
@@ -274,42 +274,42 @@ export const asyncRoutes = [
   //   ]
   // },
 
-  {
-    path: '/excel',
-    component: Layout,
-    redirect: '/excel/export-excel',
-    name: 'Excel',
-    meta: {
-      title: 'Excel',
-      icon: 'excel'
-    },
-    children: [
-      {
-        path: 'export-excel',
-        component: () => import('@/views/excel/export-excel'),
-        name: 'ExportExcel',
-        meta: { title: 'Export Excel' }
-      },
-      {
-        path: 'export-selected-excel',
-        component: () => import('@/views/excel/select-excel'),
-        name: 'SelectExcel',
-        meta: { title: 'Export Selected' }
-      },
-      {
-        path: 'export-merge-header',
-        component: () => import('@/views/excel/merge-header'),
-        name: 'MergeHeader',
-        meta: { title: 'Merge Header' }
-      },
-      {
-        path: 'upload-excel',
-        component: () => import('@/views/excel/upload-excel'),
-        name: 'UploadExcel',
-        meta: { title: 'Upload Excel' }
-      }
-    ]
-  },
+  // {
+  //   path: '/excel',
+  //   component: Layout,
+  //   redirect: '/excel/export-excel',
+  //   name: 'Excel',
+  //   meta: {
+  //     title: 'Excel',
+  //     icon: 'excel'
+  //   },
+  //   children: [
+  //     {
+  //       path: 'export-excel',
+  //       component: () => import('@/views/excel/export-excel'),
+  //       name: 'ExportExcel',
+  //       meta: { title: 'Export Excel' }
+  //     },
+  //     {
+  //       path: 'export-selected-excel',
+  //       component: () => import('@/views/excel/select-excel'),
+  //       name: 'SelectExcel',
+  //       meta: { title: 'Export Selected' }
+  //     },
+  //     {
+  //       path: 'export-merge-header',
+  //       component: () => import('@/views/excel/merge-header'),
+  //       name: 'MergeHeader',
+  //       meta: { title: 'Merge Header' }
+  //     },
+  //     {
+  //       path: 'upload-excel',
+  //       component: () => import('@/views/excel/upload-excel'),
+  //       name: 'UploadExcel',
+  //       meta: { title: 'Upload Excel' }
+  //     }
+  //   ]
+  // },
 
   // {
   //   path: '/zip',
@@ -397,19 +397,16 @@ export const asyncRoutes = [
       {
         path: 'information',
         component: () => import('@/views/area1/information'),
-        name: 'Information',
         meta: { title: '厂区信息' }
       },
       {
         path: 'cameras',
         component: () => import('@/views/area1/cameras'),
-        name: 'Cameras',
         meta: { title: '实时监控' }
       },
       {
         path: 'downloads',
         component: () => import('@/views/area1/downloads'),
-        name: 'Downloads',
         meta: { title: '日志下载' }
       }
     ]
@@ -428,19 +425,16 @@ export const asyncRoutes = [
       {
         path: 'information',
         component: () => import('@/views/area1/information'),
-        name: 'Information',
         meta: { title: '厂区信息' }
       },
       {
         path: 'cameras',
         component: () => import('@/views/area1/cameras'),
-        name: 'Cameras',
         meta: { title: '实时监控' }
       },
       {
         path: 'downloads',
         component: () => import('@/views/area1/downloads'),
-        name: 'Downloads',
         meta: { title: '日志下载' }
       }
     ]
@@ -459,19 +453,16 @@ export const asyncRoutes = [
       {
         path: 'information',
         component: () => import('@/views/area1/information'),
-        name: 'Information',
         meta: { title: '厂区信息' }
       },
       {
         path: 'cameras',
         component: () => import('@/views/area1/cameras'),
-        name: 'Cameras',
         meta: { title: '实时监控' }
       },
       {
         path: 'downloads',
         component: () => import('@/views/area1/downloads'),
-        name: 'Downloads',
         meta: { title: '日志下载' }
       }
     ]
