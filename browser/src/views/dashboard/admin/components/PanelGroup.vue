@@ -104,13 +104,13 @@ export default {
       dialogTableVisible: false,
       gridData: [{
         date: '2020-05-31',
-        content: '厂区1发现安全隐患！'
+        content: '厂区1检测到安全隐患！'
       }, {
         date: '2020-05-31',
-        content: '厂区1发现安全隐患！'
+        content: '厂区1检测到安全隐患！'
       }, {
         date: '2020-05-31',
-        content: '厂区1发现安全隐患！'
+        content: '厂区1检测到安全隐患！'
       }]
     }
   },
